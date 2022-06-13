@@ -1,15 +1,9 @@
 ﻿// Напишите программу, которая принимает на вход трехзначное число 
 //и на выходе показывает вторую цифру этого числа
 
-int prompt (string message)
-{
-    Console.Write(message);
-    string number = Console.ReadLine();
-    int numberInt = int.Parse (number);
-    return numberInt;
-    }
-
-int numberInt = prompt ("Введите трехзначное число ");
+Console.Write("Введите трехзначное число: ");
+string number = Console.ReadLine();
+int numberInt = int.Parse(number);
 
 int [] array = new int[3];
 int index = array.Length - 1;
@@ -22,4 +16,5 @@ index--;
 }
 
 Console.WriteLine (array [1]);
+
 
