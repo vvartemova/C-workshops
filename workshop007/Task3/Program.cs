@@ -42,9 +42,10 @@ void CalcAvgColumn(int[,] array)
         for (int i = 0; i < array.GetLength(0); i++)
         {
             columnSum = columnSum + array [i,j];
-            avgColumn = columnSum/array.GetLength(0);
+            
             
         }
+        avgColumn = columnSum / array.GetLength(0);
         Console.WriteLine($"Среднее арифметическое элеменов в столбце {j} равно {avgColumn:f2}");
     
     }
